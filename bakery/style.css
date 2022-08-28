@@ -1,0 +1,536 @@
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+/* .active{
+    color: palevioletred;
+    text-decoration: underline;
+    font-weight: bold;
+} */
+body , html{
+    overflow-x: hidden;
+
+}
+.hero{
+    border: 2px solid black;
+    /* background-color: palevioletred; */
+}
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%; 
+}
+.logo{
+    color: brown;
+    font-size: 28px;
+}
+span{
+    color: blueviolet;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: blueviolet;
+    transition: .3s;
+}
+#button{
+    list-style-type: none;
+    text-decoration: none;
+}
+/* end of header */
+.back-image img{
+    display: flex;
+    width: 99vw;
+    height: 80vh;
+    background-size: cover;
+
+}
+/* CART===== */
+.cart{
+    
+    position: absolute;
+    
+    top: 930px;
+    right: 0;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: burlywood;
+    
+   
+}
+/* .cart.active{
+    right: 0;
+
+} */
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: black;
+    margin-top: 2rem;
+}
+.cart-box{
+    display: grid ;
+    grid-template-columns: 32% 50% 18% ;
+    align-items: center ;
+    gap: 1rem ;
+    margin-top: 1rem ;
+}
+cart-img{
+    width: 100px ;
+    height: 100px ;
+    object-fit: contain ;
+    padding: 10px;
+}
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid burlywood;
+    outline-color:brown;
+    width: 2.5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.fa-trash{
+   
+    color: brown;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top:1.5rem ;
+    border-top:1px solid brown ;
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: 0.5rem;
+
+}
+.btn-buy{
+    display:flex ;
+    margin:1.5rem auto 0 auto;
+    padding:12px 20px;
+    border:none ;
+    background:rgb(56, 2, 2) ;
+    color:burlywood ;
+    font-size:1rem ;
+    font-weight:500 ;
+    cursor: pointer;
+}
+.btn-buy:hover{
+    background: rgb(124, 105, 81);
+}
+#close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: brown;
+    cursor:pointer;
+}
+
+
+
+
+
+/* ========================Menu css======================================= */
+
+
+.textp{
+    font-weight: bolder;
+    font-size: large;
+    color: white;
+   
+} 
+/* ====================================MENU================================== */
+/* SHOP CONTENT */
+.shop-container{
+     width: 70vw;
+    margin-right: 400px;
+}
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,auto));
+    gap: 1.5rem;
+}
+.section-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.product-box {
+    position: relative;
+}
+.product-box:hover {
+    padding: 10px;
+    border: 1px solid blueviolet;
+    transition: 0.4s;
+}
+.product-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+.product-title{
+    font-size:1.1rem ;
+    font-weight:600 ;
+    text-transform:uppercase ;
+    margin-bottom:0.5rem ;
+}
+.price{
+    font-weight: 500;
+}
+.fa-cart-plus{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    color: brown;
+    cursor: pointer;
+    background: burlywood;
+}
+.fa-cart-plus:hover{
+    background: rgb(202, 172, 136);
+}
+
+
+
+
+/* ==========================END OF MENU CSS=============================== */
+
+
+.line{
+    display: flex;
+    color: palevioletred;
+    width: 10%;
+    border: 2px solid palevioletred;
+    border-radius: 2%;
+    text-align: center;
+    margin-left: 470px;
+   
+}
+/* events */
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.row .col{ 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+.events .row{
+    margin-top: 50px;
+}
+h4{
+    font-size: 4vmin;
+    color: brown;
+    margin: 20px auto;
+}
+p{
+    color: purple;
+    padding: 0px 40px;
+}
+/* ======================END OF EVENTS===================================== */
+
+/* ===================END OF FRONT PAGE===================================== */
+
+/* ===footer===== */
+.footer{
+    width: 100%;
+    height: 30vh;
+    padding: 40px 0;
+    background-color: burlywood;
+    text-align: center;
+   
+ 
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: black;
+  
+}
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid beige;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+
+}
+.footer .social a:hover{
+
+    opacity: 0.9;
+}
+.footer ul{
+    margin-top:0 ;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+
+}
+.footer ul li a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.footer ul li{
+    display: inline;
+    padding: 0 15px;
+
+}
+.footer ul li a:hover{
+    opacity: 1;
+}
+
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================END OF FOOTER=========================== */
+
+/*================================== ABOUT US STYLING============================================= */
+.About{
+    display: flex;
+    justify-content: center;
+    
+    text-align: center;
+    flex-direction: column;
+   
+}
+.about-text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: brown;
+}
+
+ .about-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    font-size: 1.5vmax;
+    font-weight: bolder;
+    color:brown;
+} 
+
+.why{
+    display: flex;
+    justify-content: center;
+}
+.under h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: brown;
+    font-size: 2vmax;
+   
+
+}
+.img-sec{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 30px;
+    margin-left: 40px;
+   
+}
+.img-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* margin: 0px 40px; */
+}
+#it1{
+    display: flex;
+    text-align: center;
+    position: relative;
+    right: 135px;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    
+
+}
+#it2{
+    display: flex;
+    text-align: center;
+    position: relative;
+    right: 20px;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#it3{
+    display: flex;
+    text-align: center;
+    position: relative;
+    left: 110px;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#it4{
+    display: flex;
+    text-align: center;
+    position: relative;
+    left: 250px;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+/* ===================================================END OF ABOUT US================================= */
+
+/* ==================================STYLING OF CONTACT US======================= */
+.main1{
+    display: flex;
+    justify-content: center;
+}
+
+.third-one{
+    display:flex ;
+    justify-content: center;
+    width: 98vw;
+    height: 35vh;
+    flex-direction: row;
+    color: black;
+    font-size: 1.5vmax;
+    font-weight: bolder;
+    background-color: whitesmoke;
+
+}
+.third-one p{
+    display: flex;
+    padding: 20px 0px;
+    justify-content: center;
+    text-align: center;
+    color: brown;
+
+}
+#d{
+    position: relative;
+    left: 300px;
+}
+ #a{
+    position: relative;
+    right: 90px;
+}
+#b{
+    position: relative;
+    right: -110px;
+}
+#c{
+    position: relative;
+    right: 400px;
+} 
+
+
+
+
+/* =================================END OF CONTACT US================================= */
+
+/* Mobile device */
+@media only screen and(max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+}
